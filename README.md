@@ -39,3 +39,26 @@ Contributers can embed a YouTube link with code in the link to execute an XSS at
 3.  Place code on vulbnerable page. 
 
 <img src="https://github.com/norcaldre/CSU/blob/master/Exploit2.gif?raw=true" width="800">
+
+
+Exploit 3
+
+WordPress version 3.9
+
+Time: 1 hour
+
+Issue
+
+Session does not terminate when user logs out of admin console.
+
+1.  Logged into admin console as 'admin'
+
+2.  Captured HTTP traffic through Burp, sent GET request for /wp-admin/profile.php to repeater
+
+3.  Logged out of admin console
+
+4.  Resent captured GET request, session was still active. 
+
+<img src="https://github.com/norcaldre/CSU/blob/master/Exploit3.gif?raw=true" width="800">
+
+
